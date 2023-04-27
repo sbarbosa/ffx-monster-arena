@@ -1,7 +1,8 @@
 {
   "name": "ffx-monster-arena",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://sbarbosa.github.io/ffx-monster-arena",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@loadable/component": "^5.15.3",
@@ -13,6 +14,7 @@
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
     "classnames": "^2.3.2",
+    "gh-pages": "^5.0.0",
     "jotai": "^2.0.4",
     "jotai-immer": "^0.2.0",
     "react": "^18.2.0",
@@ -27,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -8,7 +8,7 @@ const LocationDetails = loadable(() => import('./location-details'));
 const NotFound = loadable(() => import('routes/error/not-found'));
 
 const AppRoutes: FC = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/ffx-monster-arena">
     <Routes>
       <Route element={<PageLayout />}>
         <Route path="/" element={<Locations />} />

@@ -84,7 +84,7 @@ const Enemy: FC<Props> = ({ location, name }) => {
         )}
         <img
           className={style.portrait}
-          src={`/img/${enemy.img}`}
+          src={`/ffx-monster-arena/img/${enemy.img}`}
           alt="Enemy portrait"
           onClick={toggleInfoModal}
           onKeyUp={toggleInfoModal}

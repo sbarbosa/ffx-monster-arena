@@ -27,7 +27,7 @@ const PageLayout: FC = () => {
         <div className={classNames(style.container, 'container is-flex is-justify-content-space-between')}>
           <Button
             className={classNames({
-              'is-invisible': pathname === '/' && acknowledged
+              'is-invisible': pathname === '/' || !acknowledged
             })}
             link={{ replace: true, to: '/' }}
           >

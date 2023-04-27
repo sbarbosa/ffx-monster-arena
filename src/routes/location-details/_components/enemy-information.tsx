@@ -24,7 +24,7 @@ const EnemyInformation: FC<Props> = ({ name, onClose }) => {
         <div className="box has-text-left">
           <div className={style.header}>
             <figure className="image is-128x128">
-              <img src={`/img/${enemy.img}`} alt="Enemy portrait" />
+              <img src={`/ffx-monster-arena/img/${enemy.img}`} alt="Enemy portrait" />
             </figure>
 
             <div className="block">
