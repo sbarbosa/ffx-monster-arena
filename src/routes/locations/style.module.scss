@@ -1,0 +1,11 @@
+.location {
+    background: rgb(188, 232, 241);
+    background: linear-gradient(150deg, rgba(188, 232, 241, 1) 30%, rgba(255, 255, 255, 1) 100%);
+
+    font-weight: 700;
+
+    &.blocked {
+        background: rgb(227, 227, 227);
+        background: linear-gradient(150deg, rgba(227, 227, 227, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    }
+}

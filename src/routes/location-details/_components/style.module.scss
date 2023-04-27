@@ -1,0 +1,110 @@
+.enemy {
+    display: flex;
+    position: relative;
+    height: 100%;
+    gap: 0.75rem;
+
+    &.misplaced {
+        background: rgb(250, 235, 204);
+        background: linear-gradient(150deg, rgba(250, 235, 204, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    .check {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+
+    .portrait {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+    .information {
+        flex-grow: 1;
+
+        :global(.title) {
+            margin-bottom: 0.75rem;
+        }
+
+        .killcount {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .minusButton {
+                border-radius: 0;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+
+            .plusButton {
+                border-radius: 0;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+
+            .progress {
+                position: relative;
+                width: 100%;
+
+                .label {
+                    position: absolute;
+                    top: 7px;
+                    left: 43%;
+                    margin: 0;
+                }
+
+                :global(.progress) {
+                    margin: 0;
+                    height: 40px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+
+.infoModal {
+    :global(.modal-content) {
+        width: 90vw;
+        max-width: 960px;
+    }
+
+    .header {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+
+        figure {
+            flex-shrink: 0;
+        }
+    }
+
+    .sectionInformation {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+
+        & > div {
+            flex: 2 1 auto;
+
+            border: 1px solid #dbdbdb;
+            padding: 0.75rem;
+            height: 100%;
+            margin: 0;
+        }
+
+        .sectionDescription {
+            span {
+                &:after {
+                    content: ", ";
+                }
+
+                &:last-child:after {
+                    content: "";
+                }
+            }
+        }
+    }
+}

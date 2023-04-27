@@ -1,0 +1,26 @@
+.accordionItem {
+    &.opened {
+        .accordionContent {
+            max-height: 500px;
+        }
+    }
+
+    :global(.card-header) {
+        cursor: pointer;
+        background: rgb(244, 244, 244);
+        background: linear-gradient(150deg, rgba(244, 244, 244, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    }
+}
+
+.accordionContent {
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    // "height: 0" not work with css transitions
+    max-height: 0;
+    padding: 0;
+    margin-bottom: 5px;
+
+    :global(.content) {
+        padding: 0.75rem;
+    }
+}
