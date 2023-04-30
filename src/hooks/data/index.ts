@@ -75,7 +75,8 @@ export const conquests: Conquests = {
     'Machea',
     'Master Coeurl',
     'Master Tonberry',
-    'Varuna'
+    'Varuna',
+    'Adamantoise'
   ],
   speciesconquest: [
     'Fenrir',
