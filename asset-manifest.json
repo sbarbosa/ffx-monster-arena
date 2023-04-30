@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ffx-monster-arena/static/css/main.f77cdec1.css",
-    "main.js": "/ffx-monster-arena/static/js/main.dda0fcfa.js",
+    "main.js": "/ffx-monster-arena/static/js/main.ce142bc8.js",
     "static/css/899.cc5fab8a.chunk.css": "/ffx-monster-arena/static/css/899.cc5fab8a.chunk.css",
     "static/js/899.51b7d0e8.chunk.js": "/ffx-monster-arena/static/js/899.51b7d0e8.chunk.js",
     "static/css/190.11768957.chunk.css": "/ffx-monster-arena/static/css/190.11768957.chunk.css",
@@ -15,7 +15,7 @@
     "static/media/fa-brands-400.woff2": "/ffx-monster-arena/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
     "index.html": "/ffx-monster-arena/index.html",
     "main.f77cdec1.css.map": "/ffx-monster-arena/static/css/main.f77cdec1.css.map",
-    "main.dda0fcfa.js.map": "/ffx-monster-arena/static/js/main.dda0fcfa.js.map",
+    "main.ce142bc8.js.map": "/ffx-monster-arena/static/js/main.ce142bc8.js.map",
     "899.cc5fab8a.chunk.css.map": "/ffx-monster-arena/static/css/899.cc5fab8a.chunk.css.map",
     "899.51b7d0e8.chunk.js.map": "/ffx-monster-arena/static/js/899.51b7d0e8.chunk.js.map",
     "190.11768957.chunk.css.map": "/ffx-monster-arena/static/css/190.11768957.chunk.css.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.f77cdec1.css",
-    "static/js/main.dda0fcfa.js"
+    "static/js/main.ce142bc8.js"
   ]
 }
