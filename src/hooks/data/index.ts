@@ -79,7 +79,9 @@ export const conquests: Conquests = {
     'Demonolith',
     'Adamantoise',
     'Wraith',
-    'Great Malboro'
+    'Great Malboro',
+    'Gemini (Sword)',
+    'Gemini (Club)'
   ],
   speciesconquest: [
     'Fenrir',
