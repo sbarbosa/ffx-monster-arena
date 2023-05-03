@@ -62,8 +62,7 @@ export const conquests: Conquests = {
     'Barbatos',
     'Adamantoise',
     'Behemoth King',
-    'Ahriman',
-    'Varuna'
+    'Ahriman'
   ],
   omegadungeon: [
     'Zaurus',
@@ -290,30 +289,33 @@ export const specialConquests: SpecialConquests = {
     { location: 'original', enemy: 'Ultima Buster' },
     { location: 'original', enemy: 'Shinryu' },
     { location: 'original', enemy: 'Nemesis' }
-  ],
-  spira: locations.reduce((array, { id: location }) => {
-    // Solo las locations capturables
-    if (breedLocations.indexOf(location) < 0) {
-      return [
-        ...array,
-        ...conquests[location].reduce((array, enemy) => {
-          return [...array, { location, enemy }];
-        }, [] as SpecialConquest[])
-      ];
-    } else {
-      return array;
-    }
-  }, [] as SpecialConquest[]),
-  'mtgagazet-water': [
-    { location: 'mtgagazet', enemy: 'Splasher' },
-    { location: 'mtgagazet', enemy: 'Achelous' },
-    { location: 'mtgagazet', enemy: 'Maelspike' }
   ]
 };
 
+// Adds two special conquests
+specialConquests.spira = Object.keys(specialConquests).reduce((array, location) => {
+  // Solo las locations capturables
+  if (!breedLocations.includes(location)) {
+    return [
+      ...array,
+      ...specialConquests[location].reduce((array, { enemy }) => {
+        return [...array, { location, enemy }];
+      }, [] as SpecialConquest[])
+    ];
+  } else {
+    return array;
+  }
+}, [] as SpecialConquest[]);
+
+specialConquests['mtgagazet-water'] = [
+  { location: 'mtgagazet', enemy: 'Splasher' },
+  { location: 'mtgagazet', enemy: 'Achelous' },
+  { location: 'mtgagazet', enemy: 'Maelspike' }
+];
+
 export const species = locations.reduce((map, { id: location }) => {
   // Solo las locations capturables
-  if (breedLocations.indexOf(location) < 0) {
+  if (!breedLocations.includes(location)) {
     conquests[location].forEach((name) => {
       const monster = monsters[name];
       if (!map[monster?.species]) {

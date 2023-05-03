@@ -42,7 +42,7 @@ const Enemy: FC<Props> = ({ location, name }) => {
       // Control the area unlocks
       // For each breed location
       breedLocations.forEach((area) => {
-        // For each enemi of that area
+        // For each enemy of that area
         specialConquests[area].forEach((conquest) => {
           const unlock = unlocks[conquest.enemy];
 
